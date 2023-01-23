@@ -99,9 +99,22 @@
                     background: $orange-color;
                     box-shadow: $shadow;
                     display: none;
+                    animation: downNavbar 300ms ease forwards;
+                    transform-origin: top;
+                    perspective: 300px;
+
+                    @keyframes downNavbar {
+                        0% {
+                            transform: rotateX(90deg);
+                        }
+                        100% {
+                            transform: rotateX(0deg);
+                        }
+                    }
         
                     li a {
                         color: $white-color;
+
         
                         &:hover {
                             color: $black-color;
