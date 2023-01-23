@@ -9,14 +9,20 @@ openBtn.addEventListener('click', () => {
 })
 
 const closeMenu = () => {
-    closeBtn.addEventListener('click', () => {
-        navbar.style.display = 'none'
-        openBtn.style.display = 'inline-block'
-        closeBtn.style.display = 'none'
-    })
+    navbar.style.display = 'none'
+    openBtn.style.display = 'inline-block'
+    closeBtn.style.display = 'none'
 }
 
-closeMenu()
+closeBtn.addEventListener('click', closeMenu)
+
+if(window.innerWidth < 1024) {
+    document.querySelectorAll('.navbar li').forEach(navMenu => {
+        navMenu.addEventListener('click', () => {
+            closeMenu()
+        })
+    })
+}
 
 window.onscroll = () => {
     if(window.scrollY > 0) {
