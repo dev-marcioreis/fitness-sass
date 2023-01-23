@@ -1,11 +1,29 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding: 8rem;
+    scroll-padding-top: 8rem;
+    overflow-x: hidden;
 }
 body {
     background: $balck-color;
     color: $white-color;
+    line-height: 1.5;
+
+    &::-webkit-scrollbar{
+        width: .5rem;
+     }
+    
+     &::-webkit-scrollbar-track{
+        background: $balck-color;
+     }
+    
+     &::-webkit-scrollbar-thumb{
+        background: $orange-color;
+     }
 }
+.container {
+    width: $cont-large;
+    margin: 0 auto;
+ }
 img {
     width: 100%;
 }
@@ -14,10 +32,27 @@ h1, h2, h3, h4, h5 {
 }
 section {
     margin-block-start: 6rem;
-    padding: 3rem 9%;
- }
+
+    & > h2 {
+        text-align: center;
+    }
+
+    & > p {
+        text-align: center;
+        width: 42%;
+        margin: .6rem auto 2.5rem;
+    }
+}
+
+/*==========Media Query 1024px==========*/
+@media (max-width: 1024px) {
+    .container {
+        width: $cont-medium;
+    }
+}
 
 
+/*==========Media Query 768px==========*/
 
 
 
