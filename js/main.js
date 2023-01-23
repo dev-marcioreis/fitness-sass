@@ -1,6 +1,6 @@
 const openBtn = document.getElementById('open-btn')
 const closeBtn = document.getElementById('close-btn')
-const navbar = document.querySelector('.navbar')
+const navbar = document.querySelector('.header .navbar')
 
 openBtn.addEventListener('click', () => {
     navbar.style.display = 'flex'
@@ -18,3 +18,10 @@ const closeMenu = () => {
 
 closeMenu()
 
+window.onscroll = () => {
+    if(window.scrollY > 0) {
+        document.querySelector('.header').classList.add('scrollPage')
+    } else {
+        document.querySelector('.header').classList.remove('scrollPage')
+    }
+}

@@ -4,6 +4,17 @@
     padding: .7rem 0;
     z-index: 100;
 
+    &.scrollPage {
+        background: $orange-color;
+
+        .container {
+
+            .logo span {
+                color: $black-color;
+            }
+        }
+    }
+
     .big-circle {
         position: absolute;
         background-color: $orange-color;
