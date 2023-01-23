@@ -4,7 +4,7 @@ html {
     overflow-x: hidden;
 }
 body {
-    background: $balck-color;
+    background: $black-color;
     color: $white-color;
     line-height: 1.5;
 
@@ -13,7 +13,7 @@ body {
      }
     
      &::-webkit-scrollbar-track{
-        background: $balck-color;
+        background: $black-color;
      }
     
      &::-webkit-scrollbar-thumb{
