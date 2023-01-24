@@ -1,0 +1,72 @@
+.courses {
+
+    .container {
+
+        .headers {
+
+            h3 {
+                margin-block-start: -.7rem;
+            }
+        }
+
+        .box-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+
+            .box {
+                box-shadow: $shadow-1;
+                
+                &:hover .courses-image img {
+                    transform: scale(1.1);
+                    transition: all 500ms ease-in-out;
+                }
+
+                .courses-image {
+                    height: 17rem;
+                    overflow: hidden;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .content {
+                    padding: 1rem;
+
+                    .courses-icons {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        span {
+                            font-size: .9rem;
+                            color: $black-color;
+
+                            i {
+                                color: $orange-color;
+                                padding-right: .3rem;
+                            }
+                        }
+                    }
+
+                    h3 {
+                        padding-block-start: .5rem;
+                    }
+
+                    p {
+                        color: $light-color;
+                        padding-block: .5rem;
+                    }
+
+                    .btn {
+                        background: $light-color;
+                        padding: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}

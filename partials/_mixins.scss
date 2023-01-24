@@ -1,21 +1,3 @@
-@mixin displayGrid($display) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax($display, 1fr));
-    gap: 2rem;
-}
-
-@mixin title($text) {
-    font-size: $text;
-    text-transform: capitalize;
-    color: $white-color;
-}
-
-@mixin graph($graphText) {
-    font-size: $graphText;
-    line-height: 2;
-    color: $light-color;
-}
-
 @mixin button ($textColor: $white-color, $backgroundColor: $orange-color) {
     display: inline-block;
     width: fit-content;
