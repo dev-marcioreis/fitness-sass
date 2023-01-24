@@ -7,7 +7,6 @@ body {
     background: $black-color;
     color: $white-color;
     line-height: 1.5;
-    height: 300vh;
 
     &::-webkit-scrollbar{
         width: .5rem;
@@ -32,17 +31,7 @@ h1, h2, h3, h4, h5 {
     line-height: 1.2;
 }
 section {
-    margin-block-start: 6rem;
-
-    & > h2 {
-        text-align: center;
-    }
-
-    & > p {
-        text-align: center;
-        width: 42%;
-        margin: .6rem auto 2.5rem;
-    }
+    padding: 3rem 1rem;
 }
 
 /*==========Media Query 1024px==========*/
@@ -52,8 +41,6 @@ section {
     }
 }
 
-
-/*==========Media Query 768px==========*/
 
 
 
