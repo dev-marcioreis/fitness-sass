@@ -4,8 +4,8 @@ html {
     overflow-x: hidden;
 }
 body {
-    background: $black-color;
-    color: $white-color;
+    background: $white-color;
+    color: $black-color;
     line-height: 1.5;
 
     &::-webkit-scrollbar{
@@ -32,6 +32,12 @@ h1, h2, h3, h4, h5 {
 }
 section {
     padding: 3rem 1rem;
+}
+.btn {
+    @include button;
+}
+.btn-primary {
+    @include button($white-color, $orange-color);
 }
 
 /*==========Media Query 1024px==========*/

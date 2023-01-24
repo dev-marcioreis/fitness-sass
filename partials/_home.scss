@@ -1,0 +1,55 @@
+.home {
+    background: $white-color;
+    padding-block-start: 5rem;
+    
+    .container {
+
+        .home-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .column-top {
+                
+                img {
+                    filter: brightness(0);
+
+                    &:hover {
+                        filter: grayscale(1);
+                    }
+                }
+            }
+
+            .column-bottom {
+                flex: 1 75%;
+
+                span {
+                    color: $orange-color;
+                    font-size: 1.7rem;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                }
+
+                h3 {
+                    font-size: 3.5rem;                font-weight: 900;
+                    letter-spacing: -2px;
+                    margin-block-start: -1rem;
+                    margin-block-end: 1rem;
+                }
+
+                p {
+                    color: $light-color;
+                    text-align: justify;
+                    font-size: 1.1rem;
+                    margin-block-end: 2rem;
+                    letter-spacing: -1px;
+                }
+
+                .btn {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
