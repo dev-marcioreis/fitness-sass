@@ -1,0 +1,82 @@
+.about {
+
+    .container {
+
+        .about-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5rem;
+
+            .column-1 {
+                flex: 1 40%;
+
+                span {
+                    font-size: 1.7rem;
+                    color: $black-color;
+                    font-weight: 700;
+                    letter-spacing: -2px;
+                }
+
+                h3 {
+                    font-size: 2.5rem;
+                    color: $orange-color;
+                    font-weight: 900;
+                    margin-block-start: -1rem;
+                    margin-block-end: 1rem;
+                }
+
+                p {
+                    color: $light-color;
+                    text-align: justify;
+                    font-size: 1.1rem;
+                    margin-block-end: .5rem;
+                    letter-spacing: -1px;
+
+                    strong {
+                        color: $orange-color;
+                    }
+                }
+
+                .list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 2rem;
+                    margin-block-start: 2rem;
+                    margin-block-end: 2.5rem;
+
+                    .list-item {
+                        padding: .2rem .4rem;
+                        box-shadow: $shadow-2;
+                        font-weight: 700;
+                        font-size: 1rem;
+                        transition: $transition;
+
+                        i {
+                            font-size: 1.2rem;
+                            color: $orange-color;
+                        }
+
+                        &:hover {
+                            transform: translateX(1.05rem);
+                            box-shadow: $shadow;
+                        }
+                    }
+                }
+
+                .btn {
+                    background: $orange-color;
+                    color: $black-color;
+                }
+            }
+
+            .column-2 {
+
+                img {
+                    filter: brightness(0);
+                }
+            }
+        }
+    }
+}
