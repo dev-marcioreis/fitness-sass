@@ -17,7 +17,7 @@ const closeMenu = () => {
 closeBtn.addEventListener('click', closeMenu)
 
 if(window.innerWidth < 1024) {
-    document.querySelectorAll('.navbar li').forEach(navMenu => {
+    document.querySelectorAll('.navbar li a').forEach(navMenu => {
         navMenu.addEventListener('click', () => {
             closeMenu()
         })
