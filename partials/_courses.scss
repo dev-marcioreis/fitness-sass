@@ -70,3 +70,55 @@
         }
     }
 }
+
+
+/*==========Media Query 1024px==========*/
+@media (max-width: 1024px) {
+    .courses {
+
+        .container {
+    
+            .box-container {
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+        }
+    }
+}
+
+
+/*==========Media Query 768px==========*/
+@media (max-width: 768px) {
+    .courses {
+
+        .container {
+    
+            .headers {
+
+                span {
+                    font-size: 1.1rem;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    margin-block-start: -.5rem;
+                }
+            }
+    
+            .box-container {
+                grid-template-columns: 1fr;
+    
+                .box {
+                    box-shadow: $shadow-1;
+    
+                    .content {
+    
+                        p {
+                            font-size: .9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
