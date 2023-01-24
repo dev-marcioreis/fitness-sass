@@ -16,19 +16,6 @@
         }
     }
 
-    .big-circle {
-        position: absolute;
-        background-color: $orange-color;
-        filter: blur(150px);
-        border-radius: 50%;
-        width: 450px;
-        height: 350px;
-        opacity: .8;
-        top: -15rem;
-        left: -17rem;
-        z-index: -1;
-    }
-
     .container {
         display: flex;
         align-items: center;
@@ -95,7 +82,7 @@
                     flex-direction: column;
                     gap: 2rem;
                     top: 100%;
-                    right: .5rem;
+                    right: .3rem;
                     padding: 2rem;
                     background: $orange-color;
                     box-shadow: $shadow;
@@ -131,16 +118,3 @@
     }
 }
 
-
-/*==========Media Query 768px==========*/
-@media (max-width: 768px) {
-    .header {
-    
-        .big-circle {
-            width: 450px;
-            height: 350px;
-            top: -19rem;
-            left: -22rem;
-        }
-    }
-}

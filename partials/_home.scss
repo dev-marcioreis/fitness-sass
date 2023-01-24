@@ -1,5 +1,4 @@
 .home {
-    background: $white-color;
     padding-block-start: 5rem;
     
     .container {
@@ -26,12 +25,13 @@
                 span {
                     color: $orange-color;
                     font-size: 1.7rem;
-                    font-weight: 900;
+                    font-weight: 700;
                     text-transform: uppercase;
                 }
 
                 h3 {
-                    font-size: 3.5rem;                font-weight: 900;
+                    font-size: 3.5rem;
+                    font-weight: 900;
                     letter-spacing: -2px;
                     margin-block-start: -1rem;
                     margin-block-end: 1rem;
@@ -48,6 +48,85 @@
                 .btn {
                     text-transform: uppercase;
                     font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+
+/*==========Media Query 1024px==========*/
+@media (max-width: 1024px) {
+    .home {
+        padding-block-start: 7rem;
+        
+        .container {
+    
+            .home-row {
+    
+                .column-top {
+                    flex: 1 70%;
+
+                    img {
+                        filter: brightness(1) grayscale(1);
+    
+                        &:hover {
+                            filter: grayscale(0);
+                        }
+                    }
+                }
+    
+                .column-bottom {
+    
+                    span {
+                        font-size: 1.2rem;
+                    }
+    
+                    h3 {
+                        font-size: 2.1rem;
+                        margin-block-start: -.5rem;
+                    }
+    
+                    p {
+                        text-align: left;
+                        font-size: 1rem;
+                        letter-spacing: 0;
+                    }
+    
+                    .btn {
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*==========Media Query 768px==========*/
+@media (max-width: 768px) {
+    .home {
+        padding-block-start: 5.5rem;
+        
+        .container {
+    
+            .home-row {
+                flex-direction: column;
+    
+                .column-bottom {
+                    text-align: center;
+    
+                    span {
+                        font-size: 1.1rem;
+                    }
+    
+                    h3 {
+                        font-size: 2.2rem;
+                    }
+    
+                    p {
+                        font-size: .9rem;
+                    }
                 }
             }
         }
