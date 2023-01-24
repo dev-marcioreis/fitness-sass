@@ -30,6 +30,11 @@
                         height: 100%;
                         width: 100%;
                         object-fit: cover;
+                        filter: grayscale(1);
+
+                        &:hover {
+                            filter: grayscale(0);
+                        }
                     }
                 }
 
@@ -80,6 +85,19 @@
     
             .box-container {
                 grid-template-columns: repeat(2, 1fr);
+
+                .box {
+
+                    .courses-image {
+
+                        img {
+
+                            &:hover {
+                                filter: grayscale(1);
+                            }
+                        }
+                    }
+                }
 
             }
         }

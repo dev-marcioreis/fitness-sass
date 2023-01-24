@@ -65,13 +65,12 @@
             .home-row {
     
                 .column-top {
-                    flex: 1 70%;
-
+                
                     img {
-                        filter: brightness(1) grayscale(1);
+                        filter: grayscale(1);
     
                         &:hover {
-                            filter: grayscale(0);
+                            filter: grayscale(1);
                         }
                     }
                 }
