@@ -1,0 +1,96 @@
+.plans {
+    
+    .container {
+
+        .headers {
+            
+            h3 {
+                margin-block-start: -.5rem;
+            }
+        }
+
+        .plans-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .box {
+                padding: 1rem;
+                text-align: center;
+                box-shadow: $shadow-1;
+                background: $white-color;
+                border-radius: .5rem;
+                transition: $transition;
+
+                &:nth-child(1):hover {
+                    background: #BD7E3A;
+                }
+
+                &:nth-child(2):hover {
+                    background: #DBC054;
+                }
+
+                &:nth-child(3):hover {
+                    background: #E6E6E6;
+                }
+
+                &:nth-child(2) {
+                    transform: scale(1.05);
+                }
+
+                &:hover h3 {
+                    color: $black-color;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    color: $orange-color;
+                    margin-block-end: .2rem;
+                }
+
+                .price {
+                    padding: .5rem 0;
+
+                    &:hover span {
+                        color: $white-color;
+                    }
+
+                   span {
+                      font-size: 2.5rem;
+                      font-weight: 700;
+                      letter-spacing: -1px;
+                      margin-block-end: .2rem;
+                   }
+
+                   .list {
+                        margin-block-start: 1rem;
+                        margin-block-end: 1rem;
+
+                        p {
+                            margin-block-start: .2rem;
+
+                            .uil-check {
+                                color: $black-color;
+                                font-size: 1.5rem;
+                            }
+
+                            .uil-times {
+                                color: $red-color;
+                                font-size: 1.5rem;
+                            }
+                        }
+                   }
+
+                   .btn {
+                        background: rgba(0, 0, 0, 0);
+                        color: $black-color;
+                        padding: .5rem 1rem;
+                        box-shadow: $shadow-1;
+                        text-transform: uppercase;
+                   }
+                }
+            }
+        }
+    }
+}
+
+
