@@ -71,3 +71,36 @@ footer {
 
 
 /*==========Media Query 1024px==========*/
+@media (max-width: 1024px) {
+    footer {
+    
+        .container {
+            text-align: center;
+    
+            .footer-box {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+
+/*==========Media Query 768px==========*/
+@media (max-width: 768px) {
+    footer {
+    
+        .container {
+    
+            .footer-box {
+                
+                .socials {
+                    flex-direction: column;
+    
+                    a {
+                      font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+}
