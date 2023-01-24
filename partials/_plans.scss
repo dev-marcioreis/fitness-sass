@@ -94,3 +94,67 @@
 }
 
 
+/*==========Media Query 1024px==========*/
+@media (max-width: 1024px) {
+    .plans {
+    
+        .container {
+    
+            .plans-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+            }
+        }
+    }
+}
+
+
+/*==========Media Query 768px==========*/
+@media (max-width: 768px) {
+    .plans {
+    
+        .container {
+    
+            .headers {
+
+                span {
+                    font-size: 1.1rem;
+                    letter-spacing: 0;
+                }
+                
+                h3 {
+                    font-size: 1.5rem;
+                    margin-block-start: -.4rem;
+                }
+            }
+    
+            .plans-container {
+                flex-direction: column;
+                gap: 3rem;
+    
+                .box {
+    
+                    h3 {
+                        font-size: 1.3rem;
+                    }
+    
+                    .price {
+    
+                       span {
+                          font-size: 2rem;
+                       }
+    
+                       .list {
+    
+                            p {
+                              font-size: .9rem;
+                            }
+                       }
+                    }
+                }
+            }
+        }
+    }
+}
