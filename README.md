@@ -6,7 +6,7 @@ Este projeto é uma página para academias ou páginas relacionadas a esporte em
 
 ## 🚀 Finalizado.
 
-## 📋 Técnologias
+## 📋 Tecnologias
 SASS
 
 ## ✒️ Autor
